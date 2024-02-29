@@ -5916,12 +5916,12 @@ public class Blocks{
         }};
 
         worldProcessor = new LogicBlock("world-processor"){{
-            requirements(Category.logic, BuildVisibility.editorOnly, with());
+            requirements(Category.logic, with());
 
             canOverdrive = false;
             targetable = false;
             instructionsPerTick = 8;
-            forceDark = true;
+            forceDark = false;
             privileged = true;
             size = 1;
             maxInstructionsPerTick = 500;
@@ -5929,16 +5929,16 @@ public class Blocks{
         }};
 
         worldCell = new MemoryBlock("world-cell"){{
-            requirements(Category.logic, BuildVisibility.editorOnly, with());
+            requirements(Category.logic,  with());
             
             targetable = false;
             privileged = true;
             memoryCapacity = 128;
-            forceDark = true;
+            forceDark = false;
         }};
 
         worldMessage = new MessageBlock("world-message"){{
-            requirements(Category.logic, BuildVisibility.editorOnly, with());
+            requirements(Category.logic, with());
             
             targetable = false;
             privileged = true;
