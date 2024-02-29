@@ -571,7 +571,7 @@ public class LogicBlock extends Block{
 
         @Override
         public boolean shouldShowConfigure(Player player){
-            return true);
+            return true;
         }
 
         @Override
