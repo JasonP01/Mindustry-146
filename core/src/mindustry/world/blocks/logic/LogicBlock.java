@@ -397,7 +397,7 @@ public class LogicBlock extends Block{
 
         @Override
         public boolean displayable(){
-            return accessible();
+            return true;
         }
 
         @Override
@@ -571,7 +571,7 @@ public class LogicBlock extends Block{
 
         @Override
         public boolean shouldShowConfigure(Player player){
-            return accessible();
+            return true);
         }
 
         @Override
